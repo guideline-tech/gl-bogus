@@ -1,0 +1,27 @@
+{
+  "name": "@guideline-tech/pacific",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/guideline-tech/gl-bogus.git",
+    "directory": "packages/pacific"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0"
+  },
+  "dependencies": {
+    "@guideline-tech/longhorn": "^1.0.0",
+    "react": "^16.0.0"
+  },
+  "author": "Guideline, Inc.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guideline-tech/gl-bogus/issues"
+  },
+  "homepage": "https://github.com/guideline-tech/gl-bogus#readme"
+}

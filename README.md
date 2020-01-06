@@ -54,6 +54,8 @@ Note: you should not have to globally install `lerna` and instead always use the
 
 ### Versioning with Lerna
 
+Note: This step can be done separately or by doing the `publish` action.
+
 First step will always be making changes and committing them.  Lerna will either throw an error if there are any uncommitted changes (after having commited some changes) or exit successfully because the current head is already published (and no changes have been committed).  A new version for a package or set of packages will be required in order to publish.  Otherwise, Lerna will exit out of publish with no changes made to the registry.
 
 
@@ -79,21 +81,18 @@ Versions must always progress forward in order for this process to work.  You ca
 There are three ways to publish that we care about; the default, `from-git` & `from-package`, other methods should be avoided except where necessary (unversionined canary change for testing that is not for production).  The default method publishes since last release,  `from-git` publishes packages tagged in the current commit, and `from-package` publishes all packages with version not yet in the registry.   The last option will most likely be our desired work flow.
 
 1. Run `npx lerna publish from-package` in the terminal.
-2. That should be it.  Double check things correctly appear in the `packages` section of the Github repo.test
-3. 
+2. If the `version` step was not performed first, or if there have been additional changes committed since versioning was done, `publish` will go through the versioning step.
+3. That should be it.  Double check things correctly appear in the `packages` section of the Github repo.test
 
 
-<!-- TODO: -->
-### Adding a new package with Lerna
+### Adding a new package within mono-repo
 
-1. 
-2. 
-3. 
+1. Go through normal process to create an NPM package either by using `npm init`, manually building the files or bringing over an existing package from somewhere else.
+2. Go through the `publish` process for Lerna, which will version, push to git and publish to the registry.
 
 
 
 ### TODO: 
 
-* Workflow for pushing to git and publishing to packages.
-* Pre-publish hook for building the JS before `npm publish`.
-* Pre-commit hook to check linters.
+* Pre-publish hook for building the JS, running tests before `npm publish`.  This is a permenant action and these steps should be taken before publishing.  Might need to integrate into a CI workflow.
+* Pre-commit hook to check linters, similar to `app` project.
