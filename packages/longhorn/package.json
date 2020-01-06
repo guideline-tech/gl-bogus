@@ -1,6 +1,6 @@
 {
   "name": "@guideline-tech/longhorn",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -16,7 +16,7 @@
     "lobster": "^1.0.0"
   },
   "dependencies": {
-    "@guideline-tech/lobster": "^1.0.0",
+    "@guideline-tech/lobster": "^1.0.3",
     "lodash": "^4.17.15",
     "react": "^16.0.0"
   },
