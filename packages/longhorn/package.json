@@ -12,12 +12,9 @@
     "directory": "packages/longhorn"
   },
   "devDependencies": {
-    "@babel/core": "^7.0.0",
-    "lobster": "^1.0.0"
+    "@babel/core": "^7.0.0"
   },
   "dependencies": {
-    "@guideline-tech/lobster": "^1.0.3",
-    "lodash": "^4.17.15",
     "react": "^16.0.0"
   },
   "author": "Guideline, Inc.",

@@ -59,9 +59,24 @@ First step will always be making changes and committing them.  Lerna will either
 
 1. Run `npx lerna version`.
 2. Go through the command prompt for the versions.  If the repo is in `independent` mode it will walk through each package version bump, otherwise, it will bump all packages to the same semver.
-3. 
+3. Select the type of version needed for the given work.  
+4. Completing this action will push all changes to the git repository but *not* publish changes to the registry.  Changes are saved at this point, but publishing becomes a different matter since this action can be somewhat permanent.  
+
+
+https://help.github.com/en/github/managing-packages-with-github-packages/deleting-a-package#deleting-a-version-of-a-private-package
+
+Notes about versioning:
+
+Github, like NPM, does not allow for deleting of packages or versions of the package.  In order to "delete" something, you basically have to increment the version forward.  This applies mainly to public packages, where private packages can be deleted with some effort.  Though, it is not good practice and focus should be on creating a new version with a fix or falling back to a reliable version where the package is consumed.
+
+Versions must always progress forward in order for this process to work.  You cannot publish over an exitsing version.  Whenever you version/publish, you are incrementing foward.
+
+
+---
 
 ### Publishing with Lerna
+
+There are three ways to publish that we care about; the default, `from-git` & `from-package`, other methods should be avoided except where necessary (unversionined canary change for testing that is not for production).  The default method publishes since last release,  `from-git` publishes changes that exist in the remote repo, the other 
 
 1. 
 2. 
