@@ -76,10 +76,10 @@ Versions must always progress forward in order for this process to work.  You ca
 
 ### Publishing with Lerna
 
-There are three ways to publish that we care about; the default, `from-git` & `from-package`, other methods should be avoided except where necessary (unversionined canary change for testing that is not for production).  The default method publishes since last release,  `from-git` publishes changes that exist in the remote repo, the other 
+There are three ways to publish that we care about; the default, `from-git` & `from-package`, other methods should be avoided except where necessary (unversionined canary change for testing that is not for production).  The default method publishes since last release,  `from-git` publishes packages tagged in the current commit, and `from-package` publishes all packages with version not yet in the registry.   The last option will most likely be our desired work flow.
 
-1. 
-2. 
+1. Run `npx lerna publish from-package` in the terminal.
+2. That should be it.  Double check things correctly appear in the `packages` section of the Github repo.
 3. 
 
 
