@@ -16,7 +16,7 @@
     "lobster": "^1.0.0"
   },
   "dependencies": {
-    "lobster": "^1.0.0",
+    "@guideline-tech/lobster": "^1.0.0",
     "lodash": "^4.17.15",
     "react": "^16.0.0"
   },

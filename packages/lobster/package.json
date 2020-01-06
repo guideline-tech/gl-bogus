@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "lodash": "^4.17.15",
-    "longhorn": "^1.0.0",
+    "@guideline-tech/longhorn": "^1.0.0",
     "react": "^16.0.0"
   },
   "author": "Guideline, Inc.",
