@@ -1,6 +1,6 @@
 {
   "name": "@guideline-tech/lobster",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -15,7 +15,7 @@
     "@babel/core": "^7.0.0"
   },
   "dependencies": {
-    "@guideline-tech/longhorn": "^1.1.0",
+    "@guideline-tech/longhorn": "^1.1.1",
     "react": "^16.0.0"
   },
   "author": "Guideline, Inc.",
